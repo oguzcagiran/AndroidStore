@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundtile"
+    tools:context="com.example.oguzc.projectshop.CommentActivity">
+
+    <ListView
+        android:id="@+id/commentList"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/backgroundtile" />
+
+    <Button
+        android:id="@+id/commentConfirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/commentEdittext"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_style"
+        android:text="Send"
+        android:textColor="#FFFF"/>
+
+    <EditText
+        android:id="@+id/emailEditTextComment"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/commentList"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_style"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp" />
+
+    <EditText
+        android:id="@+id/commentEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/emailEditTextComment"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_style"
+        android:hint="Comment"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp" />
+
+</RelativeLayout>
